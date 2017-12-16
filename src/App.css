@@ -1,28 +1,42 @@
-.App {
-  text-align: center;
+.graphic-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: auto;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.graphic-section:hover .play-circle {
+    transform: scale(1.2);
+    transition: 0.2s;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.graphic-section:hover .play-caret {
+    color: #eb3850;
+    transform: scale(1.2);
+    transition: 0.2s;
 }
 
-.App-title {
-  font-size: 1.5em;
+.play-circle {
+    color: white;
+    padding-top: 16.5%;
+    padding-bottom: 16.5%;
 }
 
-.App-intro {
-  font-size: large;
+.play-caret {
+    color: white;
+    position: absolute;
+    margin-left: 1%;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.video-duration {
+    position: absolute;
+    top: 0;
+    right: 4%;
+    background-color: #282a3c;
+    opacity: 0.6;
+    color: white;
+    padding: 0 2%;
 }
