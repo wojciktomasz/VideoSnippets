@@ -6,7 +6,7 @@ body {
 
 .video-item {
     padding-bottom: 2%;
-    margin-top: 3%;
+    margin-top: 20px;
 }
 
 .graphic-section {
@@ -37,8 +37,8 @@ body {
 
 .play-circle {
     color: #fff;
-    margin-top: 16.5%;
-    margin-bottom: 16.5%;
+    margin-top: 40px;
+    margin-bottom: 40px;
     background: rgba(0,0,0,.4);
     border-radius: 50%;
     height: 0.80em;
@@ -91,4 +91,23 @@ body {
     font-size: 14px;
     padding-bottom: 2%;
     font-weight: 100;
+}
+
+@media screen and (max-width: 990px){
+    .play-circle {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .video-duration {
+        right: 2.5%;
+    }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+    .video-duration {
+        right: 4.8%;
+    }
 }
