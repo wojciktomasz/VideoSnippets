@@ -15,7 +15,8 @@ class VideoList extends Component {
     }
 
     renderList() {
-        return _.map(this.props.videos, video => {
+        const videoListReduced = Array.prototype.slice.call(this.props.videos, 0, 9)
+        return _.map(videoListReduced, video => {
             return (
                 <div className='col col-md-6 col-lg-4 col-sm-12 video-item' key={video.mid}>
                     <div style={{display: 'block'}}>
