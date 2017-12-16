@@ -41,7 +41,6 @@ class VideoList extends Component {
             <div className='container'>
                 <div className='row justify-content-md-center'>
                     {this.renderList()}
-                    {console.log(this.props.videos)}
                 </div>
             </div>
         )

@@ -43,6 +43,7 @@ body {
     border-radius: 50%;
     height: 0.80em;
     line-height: 80%;
+    font-weight: 100;
 }
 
 .play-caret {
@@ -88,7 +89,7 @@ body {
     line-height: 20px;
     max-height: calc(2 *20px);
     overflow: hidden;
-    font-size: 14px;
+    font-size: 12px;
     padding-bottom: 2%;
     font-weight: 100;
 }
