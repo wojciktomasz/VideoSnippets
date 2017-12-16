@@ -16,15 +16,14 @@ class VideoList extends Component {
 
     renderList() {
         const videoListReduced = Array.prototype.slice.call(this.props.videos, 0, 9)
+        const lengthFormat = video => moment.utc(video.duration*1000).format('mm:ss')
         return _.map(videoListReduced, video => {
             return (
                 <div className='col col-md-6 col-lg-4 col-sm-12 video-item' key={video.mid}>
-                    <div style={{display: 'block'}}>
-                        <div style={{backgroundImage: `url(${video.screenshot})`}} className='graphic-section'>
-                            <p className='video-duration'>{moment.utc(video.duration*1000).format('mm:ss')}</p>
-                            <i className='fa fa-circle-thin fa-5x play-circle' aria-hidden='true' />
-                            <i className='fa fa-caret-right fa-4x play-caret' aria-hidden='true' />
-                        </div>
+                    <div style={{backgroundImage: `url(${video.screenshot})`}} className='graphic-section'>
+                        <p className='video-duration'>{lengthFormat(video)}</p>
+                        <i className='fa fa-circle-thin fa-5x play-circle' aria-hidden='true' />
+                        <i className='fa fa-caret-right fa-4x play-caret' aria-hidden='true' />
                     </div>
                     <div className='video-description'>
                         <h1 className='video-title'>{video.title}</h1>
