@@ -17,15 +17,17 @@ class VideoList extends Component {
     renderList() {
         return _.map(this.props.videos, video => {
             return (
-                <div className='col col-md-4' key={video.mid}>
+                <div className='col col-md-4 video-item' key={video.mid}>
                     <div style={{backgroundImage: `url(${video.screenshot})`}} className='graphic-section'>
                         <p className='video-duration'>{moment.utc(video.duration*1000).format('mm:ss')}</p>
                         <i className='fa fa-circle-thin fa-5x play-circle' aria-hidden='true' />
                         <i className='fa fa-caret-right fa-4x play-caret' aria-hidden='true' />
                     </div>
-                    <h1>{video.title}</h1>
-                    <h2>{video.media.program}</h2>
-                    <p>{video.description}</p>
+                    <div className='video-description'>
+                        <h1 className='video-title'>{video.title}</h1>
+                        <h2 className='video-category'>{video.media.program}</h2>
+                        <p className='video-short-description'>{video.description}</p>
+                    </div>
                 </div>
             )
         })
