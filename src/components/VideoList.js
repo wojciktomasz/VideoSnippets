@@ -22,8 +22,8 @@ class VideoList extends Component {
                 <div className='col col-md-6 col-lg-4 col-sm-12 video-item' key={video.mid}>
                     <div style={{backgroundImage: `url(${video.screenshot})`}} className='graphic-section'>
                         <p className='video-duration'>{lengthFormat(video)}</p>
-                        <i className='fa fa-circle-thin fa-5x play-circle' aria-hidden='true' />
-                        <i className='fa fa-caret-right fa-4x play-caret' aria-hidden='true' />
+                        <div className='play-circle' />
+                        <i className='fa fa-caret-right fa-3x play-caret' aria-hidden='true' />
                     </div>
                     <div className='video-description'>
                         <h1 className='video-title'>{video.title}</h1>

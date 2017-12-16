@@ -41,9 +41,9 @@ body {
     margin-bottom: 40px;
     background: rgba(0,0,0,.4);
     border-radius: 50%;
-    height: 0.80em;
-    line-height: 80%;
-    font-weight: 100;
+    border: 2px solid #fff;
+    width: 60px;
+    height: 60px;
 }
 
 .play-caret {
