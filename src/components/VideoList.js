@@ -19,7 +19,7 @@ class VideoList extends Component {
         const lengthFormat = video => moment.utc(video.duration*1000).format('mm:ss')
         return _.map(videoListReduced, video => {
             return (
-                <div className='col col-md-6 col-lg-4 col-sm-12 video-item' key={video.mid}>
+                <div className='col col-md-6 col-lg-4 col-sm-12 col-12 video-item' key={video.mid}>
                     <div style={{backgroundImage: `url(${video.screenshot})`}} className='graphic-section'>
                         <p className='video-duration'>{lengthFormat(video)}</p>
                         <div className='play-button'>

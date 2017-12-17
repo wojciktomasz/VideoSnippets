@@ -62,7 +62,7 @@ body {
 .video-duration {
     position: absolute;
     top: 0;
-    right: 3.8%;
+    right: 15px;
     background-color: #282a3c;
     opacity: 0.6;
     padding: 0 2%;
@@ -105,17 +105,5 @@ body {
     .play-circle {
         margin-top: 15px;
         margin-bottom: 15px;
-    }
-}
-
-@media screen and (max-width: 767px){
-    .video-duration {
-        right: 2.5%;
-    }
-}
-
-@media screen and (min-width: 991px) and (max-width: 1200px) {
-    .video-duration {
-        right: 4.8%;
     }
 }
